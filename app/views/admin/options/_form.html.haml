@@ -1,0 +1,16 @@
+.col-md-8
+  = simple_form_for([:admin, @option], html: { class: 'form-horizontal' }) do |f|
+    = f.error_notification
+
+    = f.input :name, :hint => "English letters only", :input_html => { :class => "form-control" }
+    = f.input :title, :input_html => { :class => "form-control" }
+    = f.input :option_type, :input_html => { :class => "form-control" }
+
+    = f.input :value, :input_html => { :class => "form-control" }
+
+    = f.input :description, :required => false, :input_html => { :class => "form-control", :style => "width:500px; height:120px;" }, :rows=>4
+
+    = f.button :submit_cancel, :cancel => admin_options_path
+
+
+.clearfix

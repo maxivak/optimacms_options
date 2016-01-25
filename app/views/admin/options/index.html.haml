@@ -1,0 +1,41 @@
+.page-header
+  .row
+    .col-md-7
+      %h1
+        Options
+        %small
+          <i class="ace-icon fa fa-angle-double-right"></i>
+          add/edit options
+    .col-md-5
+      = link_to "new", new_admin_option_path, :class => "btn btn-sm btn-primary"
+
+.filter
+  = inline_filter_form_for(@filter)
+
+.center-block
+  = paginate @items
+%br
+%table.table.table-striped.table-bordered.table-hover
+  %thead
+    %tr
+      %th
+        = link_to_sortable_column :name, 'Name'
+      %th Category
+      %th Value
+      %th Commands
+
+  %tbody
+
+    - @items.each do |r|
+      %tr
+        %td
+          =link_to r.name, edit_admin_option_path(r)
+          %br
+          = r.title
+        %td
+          = r.category
+        %td
+          = r.value
+        %td
+          =link_to "Edit", edit_admin_option_path(r)
+= paginate @items
