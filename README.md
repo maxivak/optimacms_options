@@ -1,3 +1,3 @@
-= OptimacmsOptions
+# Options for OptimaCMS
 
-This project rocks and uses MIT-LICENSE.
+
