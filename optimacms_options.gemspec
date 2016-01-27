@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = OptimacmsOptions::VERSION
   s.authors     = ["Max Ivak"]
   s.email       = ["max.ivak@gmail.com"]
-  s.homepage    = "TODO"
+  s.homepage    = "https://github.com/maxivak/optimacms_options"
   s.summary     = "Options for OptimaCMS."
   s.description = "Options(Settings) module for Optima CMS."
   s.license     = "MIT"

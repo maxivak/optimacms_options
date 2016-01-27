@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   # for names
   root to: "home#index"
 
+
   mount OptimacmsOptions::Engine => "/", :as => 'cms_options'
 
   # !!! LAST row

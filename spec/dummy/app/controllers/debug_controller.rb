@@ -8,4 +8,10 @@ class DebugController < ApplicationController
     y=0
   end
 
+  def t2
+    u = cms_options.admin_options_url
+
+    y=0
+  end
+
 end

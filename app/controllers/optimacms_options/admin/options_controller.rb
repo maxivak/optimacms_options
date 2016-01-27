@@ -1,16 +1,35 @@
 
-class Admin::OptionsController < Optimacms::Admin::AdminBaseController
+class  OptimacmsOptions::Admin::OptionsController < Optimacms::Admin::AdminBaseController
 
 
   #include FilterHelper
   # search
-  search_filter :index, {save_session: true, search_method: :post_and_redirect, url: :admin_options_url, search_url: :search_admin_options_url , search_action: :search} do
+  #search_filter :index, {save_session: true, search_method: :post_and_redirect, url: :admin_options_url, search_url: :search_admin_options_url, search_action: :search} do
+  search_filter :index, {save_session: true, search_method: :post_and_redirect, url: :admin_options_url, search_url: :search_admin_options_url} do
     default_order "id", 'desc'
 
     # fields
     field :name, :string, :text, {label: 'name', default_value: '', condition: :like_full, input_html: {style: "width: 240px"}}
   end
 
+  define_method("search2") do
+    #redirect_to action: name.to_sym
+
+    #redirect_to main_app.send(options[:url])
+    #redirect_to send(options[:url])
+    #redirect_to '/'
+
+    redirect_to send(:admin_options_url)
+    #render :text=>'1'
+  end
+
+
+  def search3
+    #redirect_to action: name.to_sym
+    #redirect_to main_app.send(options[:url])
+    redirect_to send(:admin_options_url)
+    #redirect_to '/'
+  end
 
   def index
     @items = Option.by_filter(@filter)
@@ -158,6 +177,5 @@ class Admin::OptionsController < Optimacms::Admin::AdminBaseController
     redirect_to url_list, :flash => { :success => "Deleted" }
   end
 =end
-
 end
 
