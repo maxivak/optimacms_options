@@ -137,6 +137,24 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="simple_options (v0.0.1, /mnt/data/projects/mmx/simple_options) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../simple_options/app" />
+          <root url="file://$MODULE_DIR$/../simple_options/bin" />
+          <root url="file://$MODULE_DIR$/../simple_options/lib" />
+          <root url="file://$MODULE_DIR$/../simple_options/.idea" />
+          <root url="file://$MODULE_DIR$/../simple_options/config" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../simple_options/app" />
+          <root url="file://$MODULE_DIR$/../simple_options/bin" />
+          <root url="file://$MODULE_DIR$/../simple_options/lib" />
+          <root url="file://$MODULE_DIR$/../simple_options/.idea" />
+          <root url="file://$MODULE_DIR$/../simple_options/config" />
+        </SOURCES>
+      </library>
+    </orderEntry>
     <orderEntry type="library" scope="PROVIDED" name="actionmailer (v4.2.4, RVM: ruby-2.1.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionpack (v4.2.4, RVM: ruby-2.1.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionview (v4.2.4, RVM: ruby-2.1.7) [gem]" level="application" />
