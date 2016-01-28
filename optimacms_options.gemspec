@@ -18,6 +18,8 @@ Gem::Specification.new do |s|
   s.test_files = Dir["spec/**/*"]
 
   s.add_dependency "rails", "~> 4.2.4"
+
+  s.add_dependency "simple_options", "~> 0.0.1", :git=>'git@github.com:maxivak/simple_options.git'
   s.add_dependency "optimacms"
 
   #s.add_development_dependency "sqlite3"
