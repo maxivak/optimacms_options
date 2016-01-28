@@ -11,24 +11,6 @@ class  OptimacmsOptions::Admin::OptionsController < Optimacms::Admin::AdminBaseC
     field :name, :string, :text, {label: 'name', default_value: '', condition: :like_full, input_html: {style: "width: 240px"}}
   end
 
-  define_method("search2") do
-    #redirect_to action: name.to_sym
-
-    #redirect_to main_app.send(options[:url])
-    #redirect_to send(options[:url])
-    #redirect_to '/'
-
-    redirect_to send(:admin_options_url)
-    #render :text=>'1'
-  end
-
-
-  def search3
-    #redirect_to action: name.to_sym
-    #redirect_to main_app.send(options[:url])
-    redirect_to send(:admin_options_url)
-    #redirect_to '/'
-  end
 
   def index
     @items = Option.by_filter(@filter)
