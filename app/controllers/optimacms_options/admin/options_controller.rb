@@ -1,9 +1,8 @@
 class  OptimacmsOptions::Admin::OptionsController < Optimacms::Admin::AdminBaseController
 
-
   #include FilterHelper
+
   # search
-  #search_filter :index, {save_session: true, search_method: :post_and_redirect, url: :admin_options_url, search_url: :search_admin_options_url, search_action: :search} do
   search_filter :index, {save_session: true, search_method: :post_and_redirect, url: :admin_options_url, search_url: :search_admin_options_url} do
     default_order "id", 'desc'
 
@@ -57,7 +56,7 @@ class  OptimacmsOptions::Admin::OptionsController < Optimacms::Admin::AdminBaseC
     respond_to do |format|
       if @res
         format.html {
-          redirect_to main_app.admin_options_path, notice: 'Congratulations! You just edit option!'
+          redirect_to admin_options_path, notice: 'Congratulations! You just edit option!'
         }
         #format.json { render :show, status: :ok, location: @user }
       else

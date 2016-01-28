@@ -1,9 +1,16 @@
 PATH
+  remote: ../simple_options
+  specs:
+    simple_options (0.0.1)
+      rails (~> 4.2.4)
+
+PATH
   remote: .
   specs:
-    optimacms_options (0.0.2)
+    optimacms_options (0.0.3)
       optimacms
       rails (~> 4.2.4)
+      simple_options (~> 0.0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -282,6 +289,7 @@ DEPENDENCIES
   sass-rails (~> 4.0.3)
   simple_events_redis (= 1.0.1)
   simple_form
+  simple_options (~> 0.0.1)!
   simple_search_filter (= 0.0.30)
   therubyracer
   tinymce-rails (= 4.1.6)

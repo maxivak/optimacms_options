@@ -21,6 +21,9 @@ gem 'mysql2', '0.3.20'
 
 gem 'optimacms', '0.1.51'
 
+#gem "simple_options", "~> 0.0.1", :git=>'git@github.com:maxivak/simple_options.git'
+gem "simple_options", "~> 0.0.1", path: '../simple_options'
+
 #
 gem 'devise', '3.5.4'
 #gem 'devise-async'
