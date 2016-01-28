@@ -14,4 +14,10 @@ class DebugController < ApplicationController
     y=0
   end
 
+  def t3
+    obj = Option.new
+    v = obj.myset
+    x=0
+  end
+
 end
