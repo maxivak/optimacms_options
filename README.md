@@ -1,5 +1,7 @@
 # Settings (Options) module for OptimaCMS
 
+Add support to edit options in OptimaCMS admin area. Options are managed by gem [simple_options](https://github.com/maxivak/simple_options).
+
 
 # Install
 
