@@ -1,10 +1,4 @@
 PATH
-  remote: ../simple_options
-  specs:
-    simple_options (0.0.1)
-      rails (~> 4.2.4)
-
-PATH
   remote: .
   specs:
     optimacms_options (0.0.3)
@@ -145,7 +139,7 @@ GEM
     mysql2 (0.3.20)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
-    optimacms (0.1.51)
+    optimacms (0.1.53)
       ancestry
       bootstrap-sass (~> 3.3.4)
       bootstrap3_autocomplete_input (= 0.1.7)
@@ -160,7 +154,7 @@ GEM
       rails (>= 4.1)
       sass-rails (~> 4.0.3)
       simple_form
-      simple_search_filter (= 0.0.30)
+      simple_search_filter (~> 0.0.31)
       uglifier
     orm_adapter (0.5.0)
     paperclip (4.3.2)
@@ -189,7 +183,7 @@ GEM
       activesupport (>= 4.2.0.beta, < 5.0)
       nokogiri (~> 1.6.0)
       rails-deprecated_sanitizer (>= 1.0.1)
-    rails-html-sanitizer (1.0.2)
+    rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
     railties (4.2.4)
       actionpack (= 4.2.4)
@@ -232,7 +226,9 @@ GEM
     simple_form (3.2.1)
       actionpack (> 4, < 5.1)
       activemodel (> 4, < 5.1)
-    simple_search_filter (0.0.30)
+    simple_options (0.0.1)
+      rails (~> 4.2.4)
+    simple_search_filter (0.0.31)
       rails (~> 4.2.0)
     sprockets (2.12.4)
       hike (~> 1.2)
@@ -279,7 +275,7 @@ DEPENDENCIES
   kaminari
   kaminari-bootstrap (~> 3.0.1)
   mysql2 (= 0.3.20)
-  optimacms (= 0.1.51)
+  optimacms (= 0.1.53)
   optimacms_options!
   paperclip (~> 4.3)
   rails (= 4.2.4)
@@ -289,8 +285,8 @@ DEPENDENCIES
   sass-rails (~> 4.0.3)
   simple_events_redis (= 1.0.1)
   simple_form
-  simple_options (~> 0.0.1)!
-  simple_search_filter (= 0.0.30)
+  simple_options
+  simple_search_filter (= 0.0.31)
   therubyracer
   tinymce-rails (= 4.1.6)
   tzinfo-data

@@ -19,10 +19,11 @@ gem 'rails', '4.2.4'
 
 gem 'mysql2', '0.3.20'
 
-gem 'optimacms', '0.1.51'
+gem 'optimacms', '0.1.53'
 
+gem "simple_options"
 #gem "simple_options", "~> 0.0.1", :git=>'git@github.com:maxivak/simple_options.git'
-gem "simple_options", "~> 0.0.1", path: '../simple_options'
+#gem "simple_options", "~> 0.0.1", path: '../simple_options'
 
 #
 gem 'devise', '3.5.4'
@@ -48,7 +49,7 @@ gem 'kaminari'
 gem 'kaminari-bootstrap', '~> 3.0.1'
 
 gem 'simple_form'
-gem 'simple_search_filter', '0.0.30'
+gem 'simple_search_filter', '0.0.31'
 gem 'bootstrap3_autocomplete_input', '0.1.7'
 gem 'ancestry'
 
