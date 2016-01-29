@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    optimacms_options (0.0.3)
+    optimacms_options (0.0.4)
       optimacms
       rails (~> 4.2.4)
       simple_options (~> 0.0.1)
