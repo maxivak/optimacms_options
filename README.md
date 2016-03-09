@@ -5,8 +5,16 @@ Add support to edit options in OptimaCMS admin area. Options are managed by gem 
 
 # Install
 
+## install simple_options
+
+read [simple_options](https://github.com/maxivak/simple_options)
+
+
+## Install optimacms_options
+
 Gemfile:
 ```
+gem 'simple_options'
 gem 'optimacms_options'
 ```
 
@@ -15,23 +23,6 @@ bundle:
 bundle install
 ```
 
-Run gem generator:
-```
-rails generate optimacms_options:install
-```
-
-This will copy migration files.
-
-
-Db migrate:
-```
-rake db:migrate
-```
-
-
-```
-
-```
 
 routes:
 ```
