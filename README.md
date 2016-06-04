@@ -48,7 +48,7 @@ module Optimacms
             {
               title: 'Settings', route: nil,
               submenu: [
-                  {title: 'Settings', url: '/cmsadmin/options' },
+                  {title: 'Settings', url: '/'+Optimacms.admin_namespace+'/options' },
               ]
             }
         ]    
