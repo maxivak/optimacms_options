@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.1.7"
+ruby "2.2.4"
 
 # Declare your gem's dependencies in optimacms_options.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
@@ -15,35 +15,34 @@ gemspec
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
 
-gem 'rails', '4.2.4'
+gem 'rails', '4.2.5.2'
 
 gem 'mysql2', '0.3.20'
 
-gem 'optimacms', '0.1.53'
+gem 'optimacms', '0.2.8'
 
-gem "simple_options"
+gem "simple_options", '0.0.3'
 #gem "simple_options", "~> 0.0.1", :git=>'git@github.com:maxivak/simple_options.git'
 #gem "simple_options", "~> 0.0.1", path: '../simple_options'
 
 #
-gem 'devise', '3.5.4'
+gem 'devise', '3.5.6'
 #gem 'devise-async'
 
 
 #
 gem 'haml-rails', '~>0.9.0'
-gem 'sass-rails', '~>4.0.3'
+gem 'sass-rails', '5.0.4'
 gem 'uglifier'
 gem 'coffee-rails'
-gem 'jquery-rails','4.0.3'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
 gem 'font-awesome-rails', '4.3.0.0'
 gem 'bootstrap-sass', '3.3.4.1'
-gem 'compass-rails', '2.0.0'
+gem 'compass-rails', '2.0.5'
 
 
 #
-gem 'cancan'
-
 gem 'paperclip', '~> 4.3'
 gem 'kaminari'
 gem 'kaminari-bootstrap', '~> 3.0.1'
@@ -91,9 +90,7 @@ gem 'el_finder', '1.1.12'
 gem 'redis'
 gem 'redis-rails'
 gem 'redis-namespace'
-gem "simple_events_redis", '1.0.1'
-#gem "resque", '1.25.1'
-gem 'bunny', '2.2.2'
+
 
 
 
