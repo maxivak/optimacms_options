@@ -19,8 +19,8 @@ gem 'rails', '4.2.5.2'
 
 gem 'mysql2', '0.3.20'
 
-#gem 'optimacms', '0.2.8'
-gem 'optimacms', path: '../../site'
+gem 'optimacms', '0.2.8'
+#gem 'optimacms', path: '../../site'
 
 gem "simple_options", '0.0.3'
 #gem "simple_options", "~> 0.0.1", :git=>'git@github.com:maxivak/simple_options.git'
