@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["max.ivak@gmail.com"]
   s.homepage    = "https://github.com/maxivak/optimacms_options"
   s.summary     = "Options for OptimaCMS."
-  s.description = "Options(Settings) module for Optima CMS."
+  s.description = "Options(Settings) module for OptimaCMS."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", ">= 4.2"
 
   s.add_dependency "simple_options"
-  s.add_dependency "optimacms"
+  s.add_dependency "optvimacms"
 
   #s.add_development_dependency "sqlite3"
 end
