@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", ">= 4.2"
 
   s.add_dependency "simple_options"
-  s.add_dependency "optvimacms"
+  s.add_dependency "optimacms"
 
   #s.add_development_dependency "sqlite3"
 end
