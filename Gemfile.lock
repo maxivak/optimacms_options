@@ -58,8 +58,6 @@ GEM
     builder (3.2.3)
     chunky_png (1.3.10)
     climate_control (0.2.0)
-    cocaine (0.5.8)
-      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.1.x)
@@ -153,7 +151,7 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-    mimemagic (0.3.0)
+    mimemagic (0.3.2)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
@@ -182,12 +180,12 @@ GEM
       simple_search_filter (~> 0.0.31)
       uglifier
     orm_adapter (0.5.0)
-    paperclip (4.3.7)
-      activemodel (>= 3.2.0)
-      activesupport (>= 3.2.0)
-      cocaine (~> 0.5.5)
+    paperclip (6.0.0)
+      activemodel (>= 4.2.0)
+      activesupport (>= 4.2.0)
       mime-types
-      mimemagic (= 0.3.0)
+      mimemagic (~> 0.3.0)
+      terrapin (~> 0.6.0)
     rack (1.6.9)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -258,8 +256,8 @@ GEM
     simple_form (3.5.1)
       actionpack (> 4, < 5.2)
       activemodel (> 4, < 5.2)
-    simple_options (0.0.3)
-      rails (~> 4.2.4)
+    simple_options (0.0.5)
+      rails (>= 4.2)
     simple_search_filter (0.0.31)
       rails (~> 4.2.0)
     sprockets (2.12.4)
@@ -271,6 +269,8 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
+    terrapin (0.6.0)
+      climate_control (>= 0.0.3, < 1.0)
     therubyracer (0.12.3)
       libv8 (~> 3.16.14.15)
       ref
@@ -310,14 +310,13 @@ DEPENDENCIES
   mysql2 (= 0.3.20)
   optimacms (= 0.2.8)
   optimacms_options!
-  paperclip (~> 4.3)
   rails (= 4.2.7.1)
   redis
   redis-namespace
   redis-rails
   sass-rails (= 5.0.4)
   simple_form
-  simple_options (= 0.0.3)
+  simple_options (= 0.0.5)
   simple_search_filter (= 0.0.31)
   therubyracer
   tinymce-rails (= 4.1.6)

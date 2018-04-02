@@ -22,7 +22,7 @@ gem 'mysql2', '0.3.20'
 gem 'optimacms', '0.2.8'
 #gem 'optimacms', path: '../../site'
 
-gem "simple_options", '0.0.3'
+gem "simple_options", '0.0.5'
 #gem "simple_options", "~> 0.0.1", :git=>'git@github.com:maxivak/simple_options.git'
 #gem "simple_options", "~> 0.0.1", path: '../simple_options'
 
@@ -44,7 +44,6 @@ gem 'compass-rails', '2.0.5'
 
 
 #
-gem 'paperclip', '~> 4.3'
 gem 'kaminari'
 gem 'kaminari-bootstrap', '~> 3.0.1'
 
